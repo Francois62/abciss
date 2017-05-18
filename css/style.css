@@ -1,0 +1,183 @@
+@font-face{font-family: 'Avant_Garde_Extralight_ITC';src: url('../fonts/AVGELITC.eot');src: url('../fonts/AVGELITC.eot?#iefix') format('embedded-opentype'), url('../fonts/AVGELITC.woff') format('woff'), url('../fonts/AVGELITC.ttf') format('truetype'), url('../fonts/AVGELITC.svg#Avant_Garde_Extralight_ITC') format('svg');font-weight: normal;font-style: normal;}
+* {margin:0;padding:0px;}
+img{border:0px;}
+html{width:100%;}
+body{width:100%;color:#FFF;font-family:'PT Sans',sans-serif;font-size:12px;background:#000;text-align:justify;}
+#background {position:absolute;top:0px;left:0px;overflow:hidden;width:100%;z-index:0;}
+#background img{display:block;position:absolute;}
+#trame{position:absolute;top:0px;left:0px;overflow:hidden;width:100%;background-image:url(../images/trame.png);background-repeat:repeat;z-index:10;}
+#focus{position:relative;overflow-x:hidden;width:100%;z-index:20;}
+#general{position:relative;padding-bottom:30px;}
+#principal{float:left;width:50%;}
+#menu{float:left;width:50%;background-image:url(../images/fond-menu.gif);background-repeat:no-repeat;background-position:center top;}
+.centre{position:relative;width:1192px;margin:0 auto;padding:63px 0 0 0;z-index:21;}
+h1{margin:0 0 25px 105px;}
+h2{font-size:53px;font-family:'Avant_Garde_Extralight_ITC';font-weight:normal;line-height:1;text-align:left;}
+h3{font-size:35px;font-family:'Avant_Garde_Extralight_ITC';font-weight:normal;color:#FF6600;line-height:0.9;text-align:left;}
+h4{font-size:14px;color:#FF6600;}
+#conteneur{padding:0 0 0 85px;}
+.pied{clear:both;}
+.orange{color:#FF6600;}
+.blanc{color:#FFF;}
+.t21{font-size:21px;font-family:'Avant_Garde_Extralight_ITC';}
+.t19{font-size:19px;font-family:'Avant_Garde_Extralight_ITC';}
+.t18{font-size:18px;}
+.t16{font-size:16px;}
+.t14{font-size:14px;}
+
+/*FIL D'ARIANE & MENU*/
+#ariane, #lemenu{margin:0 0 15px 0;}
+#ariane a, #lemenu a{display:inline-block;vertical-align:middle;padding:0 10px;color:#FFF;font-size:13px;text-decoration:none;}
+#ariane a.sel, #lemenu a.sel{display:inline-block;vertical-align:middle;background-color:#FFF;padding:0 10px;color:#333;font-size:13px;text-decoration:none;}
+#ariane img{display:inline-block;vertical-align:middle;margin:0 10px 0 0;}
+#lemenu img{display:inline-block;vertical-align:middle;margin:0 0 0 10px;}
+#ariane span.ligne,#lemenu span.menu7{display:inline-block;vertical-align:middle;height:1px;overflow:hidden;background-color:#FFF;}
+#ariane span.ligne1{display:inline-block;vertical-align:middle;width:18px;height:1px;overflow:hidden;background-color:#FFF;}
+#ariane span.ligne2{display:inline-block;vertical-align:middle;width:192px;height:1px;overflow:hidden;background-color:#FFF;}
+.vers_menu,.vers_principal{cursor:pointer;}
+#lemenu .menu1{display:inline-block;vertical-align:middle;width:930px;height:1px;overflow:hidden;background-color:#FFF;}
+#lemenu .menu2{display:inline-block;vertical-align:middle;width:192px;height:1px;overflow:hidden;background-color:#FFF;}
+#lemenu .menu3{display:inline-block;vertical-align:middle;width:767px;height:1px;overflow:hidden;background-color:#FFF;}
+#lemenu .menu4{display:inline-block;vertical-align:middle;width:195px;height:1px;overflow:hidden;background-color:#FFF;}
+#lemenu .menu5{display:inline-block;vertical-align:middle;width:454px;height:1px;overflow:hidden;background-color:#FFF;}
+#lemenu .menu6{display:inline-block;vertical-align:middle;width:438px;height:1px;overflow:hidden;background-color:#FFF;}
+#lemenu .menu8{display:inline-block;vertical-align:middle;width:1009px;height:1px;overflow:hidden;background-color:#FFF;}
+#lemenu  .link:hover{display:inline-block;vertical-align:middle;background-color:#FF6600;padding:0 10px;color:#000;font-size:13px;text-decoration:none;}
+#lemenu ul{display:block;list-style-type:none;}
+#lemenu li{display:block;margin:0 0 27px 0;}
+#lemenu li.first{display:block;margin:0 0 10px 0;}
+#lemenu li.rub{margin:0 0 0 256px;}
+#lemenu li.sousrub{margin:5px 0 0 521px;}
+#lemenu li.sousrubfin{margin:5px 0 27px 521px;}
+
+/*PREHOME*/
+.relative{position:relative;}
+#prehome{position:absolute;width:224px;height:225px;left:50%;margin-left:-112px;z-index:20;}
+#fondu{position:absolute;top:0px;left:0px;background-color:#FFF;z-index:0;opacity:0;filter:alpha(opacity=0);}
+
+/*ACTUS*/
+.actu{position:relative;width:923px;padding:15px 145px 11px 8px;border-top:1px solid #FFF;}
+#principal .first{border-top:none;padding:0 145px 11px 8px;}
+.actu .visuel{float:left;width:491px;margin:15px 34px 0 0;}
+.actu .visuel .image{height:277px;}
+.actu .pic{border:1px solid #FFF;width:489px;height:275px;}
+.actu .miniature{display:inline-block;border:1px solid #FFF;margin:10px 8px 0 0;cursor:pointer;}
+.actu .texte{width:398px;float:left;margin:25px 0 0 0;}
+.actu .masque{display:none;}
+.actu .ouvrir{position:absolute;display:block;width:44px;height:23px;bottom:10px;right:10px;background-image:url(../images/croix.png);cursor:pointer;}
+.actu .fermer{position:absolute;display:block;width:44px;height:44px;top:10px;right:10px;background-image:url(../images/croix.png);cursor:pointer;}
+.actu .t14{margin:5px 0 0 0;}
+
+/*ACTU*/
+#noborder{display:block;position:absolute;left:50%;margin-left:-450px;width:900px;border:0px;z-index:20;text-decoration:none;color:#FFF;}
+#noborder .t14{margin:5px 0 15px 0;}
+#noborder #savoir{display:block;margin:15px 0 0 407px;}
+
+/*PROJET*/
+#projets{padding:30px 0 0 30px;}
+.projet{position:relative;float:left;width:234px;height:125px;border:1px solid #000;}
+.projet .visuel{position:absolute;top:0;left:0;width:234px;height:125px;z-index:23;}
+.projet p{position:absolute;bottom:0;left:0;width:182px;padding:12px 26px;color:#FFF;background-color:#FF6633;font-family:Arial;font-weight:bold;font-size:14px;text-align:center;z-index:22;}
+.projet:hover{border:1px solid #FF6633;}
+.projet:hover p{z-index:24;}
+#projet .texte{float:left;width:415px;margin:80px 100px 0 0;}
+#projet .visuel{float:left;width:491px;margin:80px 0 0 0;}
+#projet #visuel{background-color:#FFF;width:491px;}
+#projet #visuel a {display:block;width:491px;}
+#projet .pic{border:1px solid #FFF;height:264px;max-width:491px;display:block;margin:auto;}
+#projet #visuel .zoom{position:absolute;bottom:0px;right:0px;}
+#projet  .miniature{display:inline-block;border:1px solid #FFF;margin:10px 8px 0 0;cursor:pointer;}
+#info1{display:inline-block;vertical-align:top;padding:0 8px 0 15px;margin:20px 0 0 0;}
+#info2{display:inline-block;vertical-align:top;padding:0 0 0 8px;margin:20px 0 0 0;border-left:solid 1px #FFF;}
+#pdf{display:block;text-decoration:none;color:#FFF;margin:20px 0 0 48px;}
+#pdf span{vertical-align:middle;}
+#pdf img{vertical-align:middle;}
+
+/*TROMBINOSCOPE*/
+#trombinoscope{margin:0 0 0 21px;position:relative;text-align:left;}
+#trombinoscope table{border-collapse:separate;}
+#trombinoscope td{width:140px;height:140px;background-image:url(../images/fond-trombi.png);}
+#trombinoscope td .info{display:block;position:relative;cursor:pointer;}
+#trombinoscope td .info_droite{position:absolute;display:none;top:0;left:0;width:278px;height:136px;border:2px solid #FF6600;}
+#trombinoscope td .info_bas{position:absolute;display:none;top:0;left:0;width:136px;height:278px;border:2px solid #FF6600;}
+#trombinoscope td .info_gauche{position:absolute;display:none;top:0;right:0;width:278px;height:136px;border:2px solid #FF6600;}
+#trombinoscope td .info_haut{position:absolute;display:none;bottom:0;left:0;width:136px;height:278px;border:2px solid #FF6600;}
+#trombinoscope td:hover .info_droite,#trombinoscope td:hover .info_bas,#trombinoscope td:hover .info_gauche,#trombinoscope td:hover .info_haut{display:block;z-index:50;}
+#trombinoscope td .info_droite .gauche{position:absolute;top:0;left:0;width:138px;height:136px;background-image:url(../images/fond-droite.png);}
+#trombinoscope td .info_droite .droite{position:absolute;top:0;left:138px;width:130px;height:126px;padding:5px;background-color:#FF6600;}
+#trombinoscope td .info_bas .gauche{position:absolute;top:0;left:0;width:136px;height:138px;background-image:url(../images/fond-bas.png);}
+#trombinoscope td .info_bas .droite{position:absolute;top:138px;left:0;width:126px;height:130px;padding:5px;background-color:#FF6600;}
+#trombinoscope td .info_gauche .gauche{position:absolute;top:0;left:0;width:130px;height:126px;padding:5px;background-color:#FF6600;}
+#trombinoscope td .info_gauche .droite{position:absolute;top:0;left:138px;width:138px;height:136px;background-image:url(../images/fond-gauche.png);}
+#trombinoscope td .info_haut .gauche{position:absolute;top:0;left:0;width:126px;height:130px;padding:5px;background-color:#FF6600;}
+#trombinoscope td .info_haut .droite{position:absolute;top:138px;left:0;width:136px;height:138px;background-image:url(../images/fond-haut.png);}
+#trombinoscope h4{font-size:16px;color:#000;}
+#trombinoscope td p{font-size:13px;color:#FFF;}
+#zoom{position:absolute;display:none;top:2px;left:286px;width:538px;height:536px;padding:15px 14px;background-color:#000;z-index:50;}
+#zoom div{width:536px;height:430px;margin:0 0 25px 0;border:1px solid #333;}
+#zoom #fermer{display:block;position:absolute;bottom:15px;right:15px;cursor:pointer;}
+
+/*CONTACT*/
+#contact_calais{width:1070px;border-bottom:solid 1px #FFF;padding:0 0 10px 10px;line-height:1;}
+#contact_calais a{color:#FFF;}
+#contact_dunkerque{width:1070px;border-bottom:solid 1px #FFF;padding:10px 10px 10px 0;line-height:1;text-align:right;}
+#contact_dunkerque a{color:#FFF;}
+#contact_dunkerque h2{text-align:right;}
+#contact_mail{width:1060px;margin:200px 0 0 0;padding:10px;border-top:solid 1px #FFF;border-bottom:solid 1px #FFF;}
+#contact_mail a{color:#FFF;text-decoration:none;}
+
+/*ORGANIGRAMME*/
+#organigramme {font-size:14px;}
+#organigramme h2.orga{display:inline-block;*zoom:1;*display:inline;position:relative;margin-right:10px;}
+#organigramme h2.orga a{text-decoration:none;color:#999999;}
+#organigramme h2.sel a{color:#FFF;}
+#organigramme .montrer{position:absolute;display:block;width:44px;height:23px;top:60px;left:0;background-image:url(../images/croix.png);cursor:pointer;}
+#ligne1{margin:60px 0 0 0;}
+#ligne2{margin:15px 0 0 50px;}
+#ligne3{margin:15px 0 0 100px;}
+#ligne4{margin:15px 0 30px 150px;}
+#ligne1 p, #ligne2 p, #ligne3 p, #ligne4 p{display:inline-block;*zoom:1;*display:inline;margin:0 40px 0 0;}
+#photo{width:361px;height:170px;padding:77px 0 0 614px;background-color:#000;background-image:url(../images/organigramme.jpg);background-repeat:no-repeat;border:1px solid #FFF;}
+
+/*ESPRIT*/
+#esprit_gauche{float:left;width:485px;margin:20px 42px 0 0;}
+#esprit_droite{float:left;width:524px;margin:20px 0 0 0;}
+#esprit_gauche h3{margin:30px 0 0 0;}
+#esprit_gauche p{margin:10px 0 0 0;}
+#esprit_gauche a{display:block;font-family:'Avant_Garde_Extralight_ITC';font-size:41px;color:#FFF;text-decoration:none;}
+#esprit_gauche a.orange{color:#FF6600;}
+
+/*LES ASSOCIES*/
+#associes{position:relative;width:900px;height:529px;background-image:url(../images/associes.jpg);border:1px solid #FFF;margin:40px 0 0 30px;}
+#associes a{display:block;width:30px;height:30px;opacity:0;position:absolute;}
+a.lamare{top:278px;left:46px;}
+a.delmarre{top:364px;left:249px;}
+a.wacheux{top:237px;left:441px;}
+a.pichon{top:329px;left:596px;}
+a.vermersh{top:203px;left:753px;}
+#associes p{position:absolute;background-image:url(../images/vers-droite.png);background-repeat:no-repeat;padding:0 0 0 18px;background-position:0px 3px;display:none;font-size:14px;}	
+p.lamare{top:306px;left:56px;}
+p.delmarre{top:364px;left:287px;}
+p.wacheux{top:230px;left:479px;}
+p.pichon{top:329px;left:634px;}
+p.vermersh{top:238px;left:653px;}						
+
+/*METIER*/
+#metier_gauche{float:left;width:430px;margin:20px 10px 0 0;text-align:right;}
+#metier_droite{float:left;width:500px;margin:25px 0 0;border-left:1px solid #FFF;}
+#metier_gauche .ouvrir{width:44px;height:23px;display:inline-block;*zoom:1;*display:inline;background-image:url(../images/croix.png);}
+#voir_orga{display:block;width:125px;text-align:center;float:right;margin:40px 0 0 0;text-decoration:none;color:#FFF;}
+#metier_droite .picto{float:left;width:41px;margin:4px 21px 0 5px;}
+#metier_droite .picto .visu{display:block;width:42px;margin:0 0 19px 0;background-repeat:no-repeat;overflow:hidden;}
+#metier_droite .picto .sel{display:block;width:42px;margin:0 0 19px 0;background-repeat:no-repeat;overflow:hidden;background-position:-53px 0;}
+#metier_droite .picto .visu:hover{background-position:-53px 0;}
+#metier_droite .picto  #architecte{background-image:url(../images/barchitecte.png);height:35px;}
+#metier_droite .picto  #metreur{background-image:url(../images/bmetreur.png);height:34px;}
+#metier_droite .picto  #secretaire{background-image:url(../images/bsecretaire.png);height:32px;}
+#metier_droite .picto  #environnement{background-image:url(../images/benvironnement.png);height:37px;}
+#metier_droite .picto  #dessinateur{background-image:url(../images/bdessinateur.png);height:28px;}
+#metier_droite .picto  #technicien{background-image:url(../images/btechnicien.png);height:28px;}
+#metier_droite .picto  #comptable{background-image:url(../images/bcomptable.png);height:33px;margin:0px;}
+#metier_droite .fleche{float:left;width:28px;margin:8px 0 0 0;}
+#metier_droite .texte{float:left;width:380px;font-size:20px;line-height:1.1;margin:5px 0 0 0;}
+#metier_droite .texte h3{font-size:30px;color:#FF6600;font-family:'PT Sans';font-weight:normal;margin:0 0 10px 0;}

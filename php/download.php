@@ -1,0 +1,1 @@
+<?php	if(!empty($_GET['i'])){		$id = intval($_GET['i']);		header('Content-Type: application/pdf');		header('Content-Disposition: attachment; filename=fiche_descriptive');		readfile('http://www.peaudebanane.com/test/abciss/pdf/'.$id.'.pdf');	}?>
